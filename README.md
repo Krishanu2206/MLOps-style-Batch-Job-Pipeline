@@ -80,7 +80,7 @@ Successful runs produce a metrics file like this:
   "rows_processed": 9996,
   "metric": "signal_rate",
   "value": 0.4991,
-  "latency_ms": 31,
+  "latency_ms": 20,
   "seed": 42,
   "status": "success"
 }
@@ -91,15 +91,15 @@ Successful runs produce a metrics file like this:
 Successful runs produce logs similar to the following:
 
 ```text
-2026-05-20 20:48:18,750 [INFO] Job initiated. Starting validation and processing lifecycle.
-2026-05-20 20:48:18,751 [INFO] Loading configuration from path: config.yaml
-2026-05-20 20:48:18,752 [INFO] Config successfully validated. Version: v1 | Seed: 42 | Window: 5
-2026-05-20 20:48:18,753 [INFO] Reading dataset from path: data.csv
-2026-05-20 20:48:18,773 [INFO] Dataset successfully validated and loaded. Total rows: 10000
-2026-05-20 20:48:18,775 [INFO] Computing rolling average on Close metric.
-2026-05-20 20:48:18,777 [INFO] Generating vectorized binary signals.
-2026-05-20 20:48:18,782 [INFO] Execution complete. Performance Metrics written to metrics.json
-2026-05-20 20:48:18,782 [INFO] Metrics Summary -> Rows Processed: 9996 | Signal Rate: 0.4991 | Latency: 31ms
-2026-05-20 20:48:18,783 [INFO] Job ended. Status: success
-2026-05-20 20:48:18,783 [INFO] Exit code: 0 (success)
+2026-05-20 20:55:24,089 [INFO] Job initiated. Starting validation and processing lifecycle.
+2026-05-20 20:55:24,089 [INFO] Loading configuration from path: config.yaml
+2026-05-20 20:55:24,090 [INFO] Config successfully validated. Version: v1 | Seed: 42 | Window: 5
+2026-05-20 20:55:24,090 [INFO] Reading dataset from path: data.csv
+2026-05-20 20:55:24,105 [INFO] Dataset successfully validated and loaded. Total rows: 10000
+2026-05-20 20:55:24,105 [INFO] Computing rolling average on Close metric.
+2026-05-20 20:55:24,108 [INFO] Generating vectorized binary signals.
+2026-05-20 20:55:24,111 [INFO] Execution complete. Performance Metrics written to metrics.json
+2026-05-20 20:55:24,111 [INFO] Metrics Summary -> Rows Processed: 9996 | Signal Rate: 0.4991 | Latency: 20ms
+2026-05-20 20:55:24,112 [INFO] Job ended. Status: success
+2026-05-20 20:55:24,112 [INFO] Exit code: 0 (success)
 ```
